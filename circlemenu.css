@@ -44,7 +44,7 @@ body {
   #menu:target>.icon-minus:before {
     opacity: 1;
   }
-
+/* Icono del que salen los otros, cambios esteticos y se "setea" como position absolute */
   .menu-item {
     width: 70px;
     height: 70px;
@@ -61,12 +61,12 @@ body {
     transition: .15s;
   }
 
-  .menu-item:hover {
+  .menu-item:hover { /* Comportamiento de los iconos cuando el raton esta sobre ellos */
     opacity: 0.5;
     box-shadow: 0 5px 10px black;
   }
 
-  .menu-item a {
+  .menu-item a { /* Se colocan y situan los iconos desplegados mediante position relative con respecto a la absolute de .menu-item */
     color: #fff;
     position: relative;
     top: 30%;
@@ -74,43 +74,47 @@ body {
     text-decoration: none;
   }
 /* Hijos de ul id=menu */
+/* Sistema de padres e hijos */
+/* Icono de Twitter */
   .menu-item:nth-child(6){ 
     background-color: rgb(0, 174, 255);
   }
-
+/* Icono de Instagram */
   .menu-item:nth-child(5){
     background-image: linear-gradient(to top ,purple,   yellow );
   }
-  
+  /* Icono de GitHub*/
   .menu-item:nth-child(3) {
     background-color: rgb(87, 25, 204);
   }
-
+/* Icono de LinkedIn */
   .menu-item:nth-child(4){
     background-color: #0a66c2
   }
 
+/* Animaciones desplegables de los iconos */
+/*Animacion del icono de Twitter */
   #menu:target>.menu-item:nth-child(6) {
     transform: rotate(60deg)
     translateY(-150px)
     rotate(300deg);
     transition-delay: 0s;
   }
-
+/* Animacion del icono de Instagram*/
   #menu:target>.menu-item:nth-child(5) {
     transform: rotate(20deg)
     translateY(-155px)
     rotate(-20deg);
     transition-delay: 0.333s;
   }
-
+/* Animación del icono de GitHub */
   #menu:target>.menu-item:nth-child(3) {
     transform: rotate(-20deg)
     translateY(-155px)
     rotate(20deg);
     transition-delay: 0.666s;
   }
-
+/* Animación del icono de LinkedIn */
   #menu:target>.menu-item:nth-child(4) {
     transform: rotate(-60deg)
     translateY(-150px)
