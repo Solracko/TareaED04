@@ -3,7 +3,7 @@ body {
     sans-serif;
     text-align: center;
   }
-
+/* Cambios esteticos del id menu, se "setea" como absolute*/
   #menu {
     width: 150px;
     height: 150px;
@@ -14,12 +14,12 @@ body {
     list-style: none;
     font-size: 200%;
   }
-
+/* Cambios esteticos con introduccion del sistema z-index (capas) */
   .menu-button {
     opacity: 0;
     z-index: -1;
   }
-
+/* Cambios esteticos a la clase menu-button y se "setea" como absolute */
   .menu-button {
     width: 150px;
     height: 150px;
@@ -54,7 +54,6 @@ body {
     top: 50%;
     margin: -50px 0 0 -50px;
     border-radius: 50%;
-    background-color: #424242;
     transform: translate(0px, 0px);
     transition: transform 0ms;
     z-index: -2;
@@ -81,7 +80,7 @@ body {
   }
 /* Icono de Instagram */
   .menu-item:nth-child(5){
-    background-image: linear-gradient(to top ,purple,   yellow );
+    background-image: linear-gradient(to bottom ,purple,   yellow );
   }
   /* Icono de GitHub*/
   .menu-item:nth-child(3) {
