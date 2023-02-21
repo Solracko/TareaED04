@@ -30,7 +30,7 @@ Carlos Hernández Morales
 I made the README using the HackMD website but it only let me export it as html or pure html to display it as I wanted it to   be displayed. This README file is the result of exporting what I made in the page to Markdown language. I put a link to the page so you can check how it should look. https://hackmd.io/@carhermora/HkgF-Ko6o
 
 ## Explanation of the script
-
+In this project, JavaScript has been used only to display the icons at the beginning, the animations are made using CSS.
 
 
 
